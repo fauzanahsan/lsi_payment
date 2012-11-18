@@ -5,7 +5,18 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'mysql2', :group => :development
+
+gem 'rails_autolink'
+gem 'thin'
+gem 'heroku'
+gem 'formtastic', '~> 2.1.1'
+gem 'rails-no-cache'
+
+group :production do
+  gem 'pg'
+  gem 'therubyracer'
+end
 
 
 # Gems used only for assets and not required
