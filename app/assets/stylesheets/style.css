@@ -1,151 +1,7 @@
-#container {
-	width: 858px;
-	height:auto;
-	margin: 0 auto;
-}
-
-.lbl_1 {
-	display:inline;
-	clear:both;
-	margin-left: 30px;
-	padding-right: 10px;
-	margin-top: 10px;
-	padding-top: 10px;
-	
-   }
-   
-.lbl_2 {
-	display:block;
-	float:left;
-	margin-left: 20px;
-	padding-left: 10px;
-	}
-form {
-  margin:0; padding:0; 
-  }
-
+@charset "utf-8";
 body {
-   background-color:#b4b4b4;
-   }
-.menu {
-	background-color: #FFFFFF;
-	height: 33px;
-	width: 858px;
-	float: left;
-	clear: both;
-	margin-left: 0px;
-	padding-left: 0px;
-}
-.body_form {
-	height: 750px;
-	width: 858px;
-	background-color:#ebebeb;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-}
-
-
-.form_text {
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:25px;
-	float: left;
-	height: 25px;
-	width: 858px;
-	margin-left: 135px;
-	margin-top: 33px;
-}
-.jeda {
-	clear: both;
-}
-
-
-.form_title1 {
-	/*clear: right;*/
-	float: left;
-	height: 21px;
-	width: 586px;
-	clear: both;
-	padding-bottom: 15px;
-}
-
-.form_title2 {
-	float: left;
-	height: 21px;
-	width: 586px;
-	clear: right;
-	margin-bottom: 10px;
-}
-
-
-
-.form_course label {
-	color:#666666;
-	font-size:12px;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	margin-top:20px;
-}
-.payment_label {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #666666;
-	margin-left: 48px;
-	display: block;
-}
-
-.bill_info {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #666666;
-	margin-left: 137px;
-	margin-top: 20px;
-	margin-bottom: 5px;
-}
-.bill_box {
-	background-color: #fde9d9;
-	height: 307px;
-	width: 586px;
-	margin-left: 137px;
-	border: 1px solid #f5cdab;
-}
-
-
-
-.custom_course label {
-	color:#666666;
-	font-size:12px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	display:block;
-	margin-left: 80px;
-}
-.footer {
-	background-color:#FFFFFF;
-	height: 133px;
-	width: 858px;
-	padding-bottom: 0px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-}
-.bar_footer {
-	background-color: #999999;
-	height: 100px;
-	padding-bottom: 0px;
-	margin-bottom: 10px;
-}
-
-
-
-.form_course {
-	height: 130px;
-	width: 586px;
-	margin-left: 135px;
-	background-color:#fde9d9;
-	border: 1px solid #f5cdab;
-	margin-top: 15px;
-}
-.img_menu {
-	margin-top: 3px;
-	margin-left: 77px;
-	
-}
+	background-color:#b4b4b4;
+	}
 .header {
 	background-color: #FFFFFF;
 	height: 115px;
@@ -154,6 +10,160 @@ body {
 	border-bottom-style: solid;
 	border-bottom-color: #999999;
 }
+.container {
+	height: auto;
+	width: 858px;
+	margin:0 auto;
+}
+.body_report {
+	background-color: #FFFFFF;
+	height: 180px;
+	width: 822px;
+	margin-left: 18px;
+}
+.list_report {
+	margin-left: 18px;
+	margin-top: 15px;
+	font-family: Calibri;
+	font-size: 18px;
+	color: #4f4f4f;
+}
+
+
+.copyright {
+	background-color: #FFFFFF;
+	height: 44px;
+	width: 858px;
+}
+.block_footer_grey {
+	background-color: #999999;
+	height: 78px;
+	width: 858px;
+}
+
+
+.body_form {
+	height: 900px;
+	width: 858px;
+	background-color: #ebebeb;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	padding-top:5px;
+}
+.bar_input_lightgrey {
+	background-color: #cacaca;
+	width: 822px;
+	margin-left:18px;
+	padding-top: 2px;
+	margin-top: 10px;
+	}
+.text_form {
+	color: #4f4f4f;
+	font-family: Calibri;
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 3px;
+}
+
+.header_form_tuition {
+	background-color: #7f7f7f;
+	height: 28px;
+	width: 822px;
+	margin-bottom:10px;
+	margin-top:3px;
+	margin-left:18px;
+	padding-top: 3px;
+	border-radius:5px;
+}
+
+.header_title_small {
+	color:#FFFFFF;
+	font-size:14px;
+	font-family:Calibri;
+	margin: 5px;
+}
+
+.bar_input_darkgrey {
+	background-color: #afafaf;
+	width: 822px;
+	margin-left:18px;
+	float: inherit;
+	margin-top: 10px;
+}
+.bar_total_confirm {
+	background-color: #4f4f4f;
+	font-family: Calibri;
+	font-size: 22px;
+	height: 30px;
+	width: 822px;
+	color: #FFFFFF;
+	margin-top: 15px;
+}
+
+.bar_menu_li {
+	width: 822px;
+	margin-top: 0px;
+	margin-left: 18px;
+	background-color: #afafaf;
+}
+.footer {
+	height: 122px;
+	width: 858px;
+	background-color: #FFFFFF;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+
+
+
+
+.title_page {
+	color:#ff4d00;
+	font-family:Calibri;
+	font-weight:200;
+	font-size:22px;
+	margin-left: 18px;
+	margin-top: 20px;
+}
+.bar{
+	height: 39px;
+	width: 822px;
+	margin-left: 18px;
+	background-image:url(bar.png);
+	background-repeat: no-repeat;
+	color:#FFFFFF;
+	font-family:Calibri;
+	font-size:22px;
+	padding-left: 18px;
+	padding-top: 6px;
+	margin-top: 10px;
+}
+.bar_central {
+	background-repeat: repeat-x;
+	height: 39px;
+	width: 812px;
+}
+.text_form_header {
+	font-family:Calibri;
+	font-size:10px;
+	color:#FFFFFF;
+	margin-left: 18px;
+}
+
+.title_grey{
+	color:#333333;
+}
+
+.summary {
+	font-family:Calibri;
+	font-size:14px;
+	color:#666666;
+	margin-left:18px;
+	}
+
 .logo {
 	float: left;
 	height: 49px;
@@ -163,152 +173,62 @@ body {
 	
 }
 
-.lbl_3 {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #666666;
-	margin-left: 90px;
-	}
-.summary {
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:12px;
-	text-align: center;
-	margin-left: 10px;
-	clear: none;
-	margin-top: 0px;
-	color: #666666;
-	margin-right: 10px;
-  }
-.bttn_confirm {
-	float: left;
-	height: 21px;
-	width: 149px;
-	border-radius: 5px;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:15px;
-	padding-right: 20px;
-	margin-top: 10px;
-	text-align: center;
-	font-weight: normal;
-	margin-left: 137px;
-}
-.logo_visa {
-	height: 25px;
-	width: 81px;
-	background-image: url(images/logo-visa-&-mastercard.jpg);
-	background-repeat: no-repeat;
-	margin-left: 137px;
-}
-
-.box_input {
-	height: 255px;
-	width: inherit;
-	margin-top: 27px;
-	margin-left: 35px;
-    }
-
 .input_type {
-	border-radius: 2px;
-	margin-left:10px;
-	background-color: #FFFFFF;
+	margin-top: 6px;
+	margin-bottom:5px;
+	float:left;
+	clear: right;
+	opacity:0%;
+	}
+.menu_drop {
+ margin-bottom:5px;
+ }
+
+.spasi {
+	clear:both;
 	}
 	
-.box_custom_course {
-	height: 130px;
-	width: 586px;
-	margin-left: 137px;
-	background-color: #fde9d9;
-	border: 1px solid #f5cdab;
-	margin-top: 40px;
-	}
-
-table {
-   margin:0 auto;
-   margin-top: 15px;
-   }
-table[border="1"] {
-border-collapse:collapse;
-font:normal 12px Verdana,Arial,Sans-Serif;
-color:#333;
-}
-table[border="1"] tr {
-background:#fff;
-}
-table[border="1"] th, table[border="1"] td {
-vertical-align:top;
-padding:5px 10px;
-border:1px solid #f5cdab;
-}
-table[border="1"] tr:nth-child(even) {
-background:#f5cdabS;
-font-family:Verdana, Arial, Helvetica, sans-serif;
-font-size:12px;
-}
-table[border="1"] th {
-font-family:Verdana, Arial, Helvetica, sans-serif;
-font-size:12px;
-background:#fde9d9;
-/*border-radius: 10px 10px 0px 0px; 
--moz-border-radius: 10px 10px 0px 0px; 
--webkit-border-radius: 10px 10px 0px 0px;*/
-color:#666666;
+.header_form_addition {
+	background-color: #7f7f7f;
+	height: 28px;
+	width: 822px;
+	margin-bottom:10px;
+	margin-top:15px;
+	margin-left:18px;
+	padding-top: 3px;
+	border-radius:5px;
 }
 
-.font_type {
-   font-family:Verdana, Arial, Helvetica, sans-serif;
-   font-size:12px;
-   }
+.bar_confirm{
+	height: 39px;
+	width: 822px;
+	background-image:url(bar.png);
+	background-repeat: no-repeat;
+	color:#FFFFFF;
+	font-family:Calibri;
+	font-size:22px;
+	padding-left: 18px;
+	padding-top: 6px;
+	margin-top: 10px;
+}
 
-.pay_total {
-	width: 390px;
-	float: right;
-	margin-right: 135px;
+.body_form_confirm {
+	height: 320px;
+	width: 858px;
+	background-color: #ebebeb;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	padding-top:5px;
 }
 
 .button_pay {
 	float:left;
 	height: 21px;
 	width: 149px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Calibri;
 	font-size: 15px;
 	margin-top: 10px;
-	margin-left: 137px;
 	border-radius: 5px;
 	text-decoration: none;
-	}
-.copyright {
-	display: inline;
-	float: left;
-	margin-left: 20px;
-	width: 400px; }
-	
-.button_pay a {
-	/*text-decoration:none;
-	color:#fff;*/
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:15px;
-	background-image:url(images/button1.png);
-	}
-	
-.button_pay a:hover {
-	/*color:#ff3c00;
-	text-decoration:none;*/
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:15px;
-	font-weight:bold;
-	background-image:url(images/button2.png);
-	}
-
-.bttn_confirm a {
-	text-decoration:none;
-	color:#fff;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:15px;
-	}
-
-.bttn_confirm a:hover {
-	text-decoration:none;
-	font-family:Verdana, Arial, Helvetioca, sans-serif;
-	font-size:15px;
-	font-weight:bold;
-	}
+	margin-left: 360px;
+}

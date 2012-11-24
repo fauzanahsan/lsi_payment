@@ -12,6 +12,7 @@ gem 'thin'
 gem 'heroku'
 gem 'formtastic', '~> 2.1.1'
 gem 'rails-no-cache'
+gem 'veritrans'
 
 group :production do
   gem 'pg'

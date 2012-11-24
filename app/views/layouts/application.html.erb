@@ -7,17 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="container">
+  <div class="container">
     <div class="header">
       <div class="logo"><a href="http://www.languagestudiesindonesia.com/"><%= image_tag("logo.jpg", :alt => "Logo") %></a></div>
     </div>
     
     <%= yield %>
-    
     <div class="footer">
-    <div class="bar_footer">
-    </div>
-    <p> &nbsp;&nbsp;&nbsp;&nbsp;copyright © 2012 <font color="#f60">Language Studies</font>&nbsp;Indonesia </p>
+      <div class="block_footer_grey"></div>
+      <p class="style1">copyright (c) 2012 <span class="style2">Language Studies</span> Indonesia</p>
     </div>
   </div>
 

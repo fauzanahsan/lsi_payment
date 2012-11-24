@@ -44,6 +44,8 @@ GEM
     excon (0.16.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faraday (0.8.4)
+      multipart-post (~> 1.1)
     formtastic (2.1.1)
       actionpack (~> 3.0)
     heroku (2.33.1)
@@ -70,6 +72,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.3.7)
+    multipart-post (1.1.5)
     mysql2 (0.3.11)
     netrc (0.7.7)
     pg (0.14.1)
@@ -130,6 +133,10 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    veritrans (1.0.0)
+      addressable
+      faraday
+      rake
 
 PLATFORMS
   ruby
@@ -148,3 +155,4 @@ DEPENDENCIES
   therubyracer
   thin
   uglifier (>= 1.0.3)
+  veritrans

@@ -48,7 +48,19 @@ LsiPayment::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'orders#index'
+  root :to => 'orders#new'
+  
+  match 'confirm'      => 'veritrans#confirm',      :via => :post # confirmation autosubmit to veritrans server
+  match 'cancel_pay'   => 'veritrans#cancel_pay',   :via => :post # canceling transaction redirect back to merchant-web
+  match 'notification' => 'veritrans#notification', :via => :post # server to server notification to merchant-web
+  match 'finish'       => 'veritrans#finish',       :via => :post # successfull transaction redirect back to merchant-web
+  match 'error'        => 'veritrans#error',        :via => :post # error transaction redirect back to merchant-web
+  
+  resources :orders, :only => ['index', 'show', 'edit', 'create']  do
+    collection do
+      post :confirm
+    end
+  end
 
   # See how all your routes lay out with "rake routes"
 

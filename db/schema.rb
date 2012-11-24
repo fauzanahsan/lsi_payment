@@ -45,11 +45,12 @@ ActiveRecord::Schema.define(:version => 20121118154433) do
     t.string   "order_id"
     t.string   "session_id"
     t.integer  "course_package_id"
+    t.integer  "course_fee",            :limit => 8, :default => 0
+    t.integer  "accomodation_fee",      :limit => 8, :default => 0
+    t.integer  "other_fee",             :limit => 8, :default => 0
     t.integer  "total_amount",          :limit => 8, :default => 0
     t.string   "accomodation_fee_info"
-    t.integer  "accomodation_fee",      :limit => 8
     t.string   "other_fee_info"
-    t.integer  "other_fee",             :limit => 8
     t.boolean  "paid_status",                        :default => false
     t.datetime "created_at",                                            :null => false
     t.datetime "updated_at",                                            :null => false
