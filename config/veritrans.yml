@@ -6,9 +6,9 @@ development:
   error_payment_return_url: "http://localhost:3000/error"
 
 production:
-  merchant_id: "A100000000000001000079"
-  merchant_hash_key: "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz0123456789012345678901"
-  unfinish_payment_return_url: "http://192.168.10.110:80/cancel_pay"
-  finish_payment_return_url: "http://192.168.10.110:80/finish"
-  error_payment_return_url: "http://192.168.10.110:80/error"
-  server_host: "http://192.168.10.250:80"
+  merchant_id: "T100000000000001000079"
+  merchant_hash_key: "4246fe0f8f6ef3dbc5972861e11bf4f5e2d51c2031ae776a8877775728bfcd17"
+  unfinish_payment_return_url: "http://lsipayment.herokuapp.com/cancel_pay"
+  finish_payment_return_url: "http://lsipayment.herokuapp.com/finish"
+  error_payment_return_url: "http://lsipayment.herokuapp.com/error"
+  server_host: "http://lsipayment.herokuapp.com"
