@@ -1,13 +1,50 @@
-<h1 align="center">Go to select payment options</h1>
- 
 <%= form_tag(@client.redirect_url, :name => "form_auto_post") do -%>
-	<input type="hidden" name="MERCHANT_ID" value="<%= @client.merchant_id %>"> 
-	<input type="hidden" name="ORDER_ID" value="<%= @client.order_id %>">
-	<input type="hidden" name="TOKEN_BROWSER" value="<%= @client.token["TOKEN_BROWSER"] %>">
-	<table border="1" align="center" width="80%" cellpadding="10" bgcolor="#FFFFCC">
-	</table>
-	<br><br>
-	<div align="center">
-	<input type="submit" value="submit">
-	</div>
+  <input type="hidden" name="MERCHANT_ID" value="<%= @client.merchant_id %>"> 
+  <input type="hidden" name="ORDER_ID" value="<%= @client.order_id %>">
+  <input type="hidden" name="TOKEN_BROWSER" value="<%= @client.token["TOKEN_BROWSER"] %>">
+
+<div class="body_form_confirm">
+  <p class="title_page"><strong><span class="title_grey">LSI’s </span>Payment<span class="title_grey">&nbsp;Confirmation</span></strong></p>
+  <div class="body_report">
+    <div class="bar_confirm">
+      <table width="100%">
+        <tr>
+          <td width="75%"><strong>ITEM NAME</strong></td>
+          <td width="25%"><strong>AMOUNT</strong></td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="list_report">
+      <table width="100%">
+        <tr>
+          <td width="75%">IND 1.1 Beginner I Tuition</td>
+          <td width="25%">Rp. 4.420.000,-</td>
+        </tr>
+        <tr>
+          <td width="75%">Accomodation Fee</td>
+          <td width="25%">Rp. 2.000.000,-</td>
+        </tr>
+        <tr>
+          <td width="75%">Other Fee</td>
+          <td width="25%">Rp. 1.000.000,-</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="bar_total_confirm">
+      <table width="100%">
+        <tr>
+          <td width="75%" align="center"><strong>TOTAL</strong></td>
+          <td width="25%"><strong>Rp. 7.420.000,-</strong></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="button_pay">
+      <%= image_submit_tag("button.png") %>
+    </div>
+    
+  </div> 
+</div>
 <% end %>

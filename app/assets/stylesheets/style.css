@@ -213,7 +213,7 @@ body {
 }
 
 .body_form_confirm {
-	height: 320px;
+	height:100%;
 	width: 858px;
 	background-color: #ebebeb;
 	font-family:Verdana, Arial, Helvetica, sans-serif;

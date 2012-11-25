@@ -39,12 +39,10 @@ class VeritransController < ApplicationController
 
     client.get_keys
     @client = client
-
-    puts client.inspect
     # puts params.inspect
-    puts client.inspect
+    #puts client.inspect
     
-    render :layout => 'layout_auto_post'
+    #render :layout => 'layout_auto_post'
   end
 
   # post-redirection from Veritrans to Merchants Web
@@ -52,11 +50,9 @@ class VeritransController < ApplicationController
   #      "sessionId"=>"session837985748788668181718189"}
   def cancel_pay
     # logic after user cancel the transaction
-
-    puts "cccccccccccccc"
     puts params.inspect
 
-    render :text => "CANCEL_PAY"
+    #render :text => "CANCEL_PAY"
   end
 
   # Server to Server post-notification(action) from Veritrans to Merchants Server 
@@ -83,11 +79,9 @@ class VeritransController < ApplicationController
   #      "sessionId"=>"session837985748788668181718189"}
   def finish
     # logic after success transaction accured
-
-    puts "ffffffffffffff"
     puts params.inspect
 
-    render :text => "FINISH. \n\nSession: #{session.inspect} \n#{session[:myname]}\n..."
+    #render :text => "FINISH. \n\nSession: #{session.inspect} \n#{session[:myname]}\n..."
   end
 
   # need scenario that could be try
@@ -98,11 +92,9 @@ class VeritransController < ApplicationController
   #      "sessionId"=>"session837985748788668181718189"}
   def error
     # logic after error transaction accured
-
-    puts "eeeeeeeeeeeeee"
     puts params.inspect
 
-    render :text => "ERROR"
+    #render :text => "ERROR"
   end
 
 end
