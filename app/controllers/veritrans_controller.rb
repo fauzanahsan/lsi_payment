@@ -96,5 +96,9 @@ class VeritransController < ApplicationController
 
     #render :text => "ERROR"
   end
+  
+  def confirm_payment
+    
+  end
 
 end

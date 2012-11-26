@@ -50,6 +50,8 @@ LsiPayment::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'orders#new'
   
+  match 'confirm_payment' => 'veritrans#confirm_payment',      :via => :get
+  
   match 'confirm'      => 'veritrans#confirm',      :via => :post # confirmation autosubmit to veritrans server
   match 'cancel_pay'   => 'veritrans#cancel_pay',   :via => :post # canceling transaction redirect back to merchant-web
   match 'notification' => 'veritrans#notification', :via => :post # server to server notification to merchant-web
